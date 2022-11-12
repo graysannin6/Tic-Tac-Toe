@@ -1,0 +1,33 @@
+label{
+    display: inline-block;
+    min-width: 70px;
+}
+
+div{
+    width: 750px;
+    height: 500px;
+    margin: auto;
+    margin-top: 50px;
+}
+td{
+    width: 100px;
+    height: 100px;
+    background-color: lightseagreen;
+    border: 2px solid blue;
+    text-align: center;
+}
+.joueurActif{
+    background-color: lightcyan;
+}
+.celluleinvalide{
+    background-color: red;
+}
+.cellulegagnante
+{
+    background-color: lightgreen;
+}
+#resultat
+{
+    font-size: x-large;
+    color: navy;
+}

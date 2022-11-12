@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Tic Tac Toe</title>
+</head>
+<body onload="initalisation()">
+    <div>
+        <!-- Joueur 1 -->
+        <label for="txtJoueur1">Joueur 1</label>
+        <input type="text" id="txtJoueur1">
+        <span id="joueur1"></span>
+        <br> <br>
+
+        <!-- Joueur 2 -->
+        <label for="txtJoueur2">Joueur 2</label>
+        <input type="text" id="txtJoueur2">
+        <span id="joueur2"></span>
+        <br> <br>
+
+        <button id="debuterPartie" onclick="debuterPartie()">Debuter la partie</button>
+        <button id="terminerPartie" onclick="terminerPartie()">Terminer la partie</button>
+        <br> <br>
+
+        <!-- grille tic tac toe -->
+        <table cellspacing = "0">
+            <tr>
+                <td id="cellule1" onclick="validerClicCellule(1)"></td>
+                <td id="cellule2" onclick="validerClicCellule(2)"></td>
+                <td id="cellule3" onclick="validerClicCellule(3)"></td>
+            </tr>
+            <tr>
+                <td id="cellule4" onclick="validerClicCellule(4)"></td>
+                <td id="cellule5" onclick="validerClicCellule(5)"></td>
+                <td id="cellule6" onclick="validerClicCellule(6)"></td>
+            </tr>
+            <tr>
+                <td id="cellule7" onclick="validerClicCellule(7)"></td>
+                <td id="cellule8" onclick="validerClicCellule(8)"></td>
+                <td id="cellule9" onclick="validerClicCellule(9)"></td>
+            </tr>
+        </table>
+        <br>
+        <span id="resultat"></span>
+    </div>
+</body>
+</html>
